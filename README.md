@@ -1,2 +1,2 @@
 # Animation
- A small project I made using HTML and CSS.
+ A small website animation I made using HTML and CSS.
