@@ -1,0 +1,87 @@
+body{
+ background:-webkit-linear-gradient(skyblue 30%,#87a4fb 50%,#449000 20%);
+}
+.sun {
+  text-align: right;
+  position:inherit;
+  width:100px;
+  height: 100px;
+  box-shadow: 0px 0px 100px 100px yellow, 0px 0px 10px 0px black;
+  background-color: yellow;
+  border-radius: 50%;
+  border:3px;
+  margin-left:60%;
+}
+.grass{
+position:absolute;
+bottom:0px;
+width: 98%;
+}
+.clouds{
+letter-spacing: 430px;
+/* animation: clouds 3s ease-out infinite;
+-webkit-animation: clouds 3s ease-out infinite; */
+display:block;
+}
+.c1{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  border-color:black;
+  border-width:3px;
+  border-style: solid;
+  background-color: #fa9000;
+  margin-left:30%;
+  z-index: 100;
+  position:absolute;
+  text-align:center;
+animation: ball 1s ease-out infinite alternate;
+  top:auto;
+  right:auto;
+  left:auto;
+  bottom:auto;
+ box-shadow: 0px 0px 10px 1px black;
+}
+.shadow {
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  border-color:black;
+  border-width:3px;
+  border-style: solid;
+  background-color: black;
+  margin-left:30%;
+  z-index: -1000;
+  position:absolute;
+  text-align:center;
+animation: ball_shadow 1s ease-out infinite alternate;
+  top:500px;
+  right:900px;
+  left:auto;
+  bottom:auto;
+ box-shadow: 0px 0px 10px 1px black;
+}
+
+@keyframes ball {
+  from {top: 345px}
+  to {top: 85px}
+}
+@keyframes ball_shadow {
+  from {width: 345px}
+  to {width: 100px}
+}
+/*@keyframes clouds{
+  from{left:0px}
+  to{right:100px}
+}
+@-webkit-keyframes clouds{
+    from{left:0px}
+    to{right:100px}
+  }
+  */
+
+p{
+  text-align:center;
+  margin-top: 10%;
+  padding-top:30%;
+}
